@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.img-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flexcard {
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+  justify-content: center;
+  height: 40vh;
+  align-items: center;
+}
+.flexcard .card {
+  padding: 20px 10px;
+  background: #fff;
+  width: 350px;
+  height: 300px;
+  box-shadow: 5px 5px 5px lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.flexcard .card h5 {
+  padding: 15px 0 5px 0;
+  border-top: 2px solid #b3b3b3;
+  width: 75%;
+  align-self: center;
+}
+.flexcard .card:nth-child(even) {
+  background: linear-gradient(180deg, rgb(160, 165, 238) 0%, rgb(105, 111, 221) 100%);
+  transform: scaleY(1.2);
+  color: #fff;
+  justify-content: space-evenly;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  align-items: center;
+}
+.flexcenter .toggle {
+  width: 60px;
+  height: 30px;
+  background: rgb(62, 62, 62);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+.flexcenter .toggle .toggle-button {
+  position: relative;
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.flexcenter .toggle.active {
+  background: cornflowerblue;
+}
+
+.flexcenter .toggle.active .toggle-button {
+  left: 12px;
+}
+
+.dollar {
+  position: relative;
+  font-size: 20px;
+  top: -3px;
+  padding-right: 5px;
+}
+
+.headtitle {
+  margin-top: 10vw;
+}
+.headtitle h2 {
+  color: hsl(234, 41%, 44%);
+}
+
+@media screen and (max-width: 750px) {
+  .flexcard {
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+  }
+  .flexcard .card {
+    margin-bottom: 40px;
+  }
+}
+button {
+  width: 80%;
+  align-self: center;
+  padding: 10px;
+  background: unset;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid hsl(234, 41%, 44%);
+  color: rgb(105, 111, 221);
+}
+
+.card:nth-child(2) button:hover {
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
